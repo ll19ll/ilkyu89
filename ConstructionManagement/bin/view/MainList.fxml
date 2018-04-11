@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="700"
+	prefWidth="770" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+	minWidth="-Infinity" fx:controller="control.RootController">
+
+	<children>
+		<Label text="남산 ENG 공사기록" layoutX="300" layoutY="20">
+			<font>
+				<Font size="20"></Font>
+			</font>
+		</Label>
+	</children>
+
+	<children>
+		<Button fx:id="btnMonthlySales" text="월별 매출액" layoutX="60"
+			layoutY="60" />
+		<Button fx:id="btnTotalList" text="전체보기" layoutX="370" layoutY="60" />
+		<TextField fx:id="txtSearch" prefHeight="20" prefWidth="70"
+			promptText="계약자명" layoutX="465" layoutY="60" />
+		<DatePicker fx:id="dpSearchDay" prefHeight="20" prefWidth="120"
+			layoutX="540" layoutY="60" />
+		<Button fx:id="btnSearch" text="검색" layoutX="670" layoutY="60" />
+		<TableView fx:id="tvContractList" prefHeight="500"
+			prefWidth="650" layoutX="60" layoutY="90" />
+		<Label text="대표 : 최 병 국" layoutX="180" layoutY="600" />
+		<Label text="연락처 : 010-6767-4700" layoutX="285" layoutY="600" />
+		<Label text="사업자번호 : 505-11-38308" layoutX="450" layoutY="600" />
+		<Button fx:id="btnContractAdd" text="등록" layoutX="260" layoutY="650" />
+		<Button fx:id="btnContractDelete" text="삭제" layoutX="370"
+			layoutY="650" />
+		<Button fx:id="btnExit" text="종료" layoutX="480" layoutY="650" />
+	</children>
+
+</AnchorPane>
+
