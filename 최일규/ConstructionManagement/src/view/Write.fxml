@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.ComboBox?>
+<?import com.sun.javafx.charts.Legend?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<!-- 등록 -->
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="410"
+	prefWidth="525" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+	minWidth="-Infinity" fx:controller="control.InfoController" >
+	
+	<children>
+		<Label text="계약 정보" layoutX="20" layoutY="17">
+			<font>
+				<Font size="17"></Font>
+			</font>
+		</Label>
+	</children>
+
+	<children>
+		<Button fx:id="btnContractReset" text="초기화" layoutX="110"
+			layoutY="17" />
+
+		<Label text="이름" layoutX="20" layoutY="53" />
+		<TextField fx:id="txtContractor" promptText="이름" prefHeight="20"
+			prefWidth="60" layoutX="50" layoutY="50" />
+
+		<Label text="전화번호" layoutX="145" layoutY="53" />
+		<TextField fx:id="txtConPhone" promptText="010-XXXX-XXXX"
+			prefHeight="20" prefWidth="120" layoutX="200" layoutY="50" />
+
+		<Label text="생년월일" layoutX="348" layoutY="53" />
+		<TextField fx:id="txtConBirth" promptText="민증 앞 6자리"
+			prefHeight="20" prefWidth="100" layoutX="402" layoutY="50" />
+
+		<Label text="주소" layoutX="20" layoutY="90" />
+		<TextField fx:id="txtConResidence" promptText="주소"
+			prefHeight="20" prefWidth="200" layoutX="50" layoutY="87" />
+
+		<Label text="계약명" layoutX="310" layoutY="90" />
+		<TextField fx:id="txtConName" promptText="계약명" prefHeight="20"
+			prefWidth="150" layoutX="352" layoutY="87" />
+
+		<Label text="가스계량기                        등급          개" layoutX="20"
+			layoutY="127" />
+		<ComboBox fx:id="cbMeter1" promptText="선택" prefHeight="20"
+			prefWidth="80" layoutX="87" layoutY="124" />
+		<TextField fx:id="txtMeter1" prefHeight="20" prefWidth="30"
+			layoutX="200" layoutY="124" />
+
+		<Label text="등급          개" layoutX="171" layoutY="153" />
+		<ComboBox fx:id="cbMeter2" promptText="선택" prefHeight="20"
+			prefWidth="80" layoutX="87" layoutY="150" />
+		<TextField fx:id="txtMeter2" prefHeight="20" prefWidth="30"
+			layoutX="200" layoutY="150" />
+
+		<Label text="등급          개" layoutX="171" layoutY="179" />
+		<ComboBox fx:id="cbMeter3" promptText="선택" prefHeight="20"
+			prefWidth="80" layoutX="87" layoutY="176" />
+		<TextField fx:id="txtMeter3" prefHeight="20" prefWidth="30"
+			layoutX="200" layoutY="176" />
+
+		<Label text="건물형태 " layoutX="280"
+			layoutY="127" />
+		<ComboBox fx:id="cbConType" promptText="선택" prefHeight="20"
+			prefWidth="80" layoutX="335" layoutY="124" />
+		<ComboBox fx:id="cbConUse" promptText="용도" prefHeight="20"
+			prefWidth="80" layoutX="422" layoutY="124" />
+
+		<Label text="공사날짜" layoutX="280" layoutY="153" />
+		<DatePicker fx:id="dpConDay" prefHeight="20" prefWidth="130"
+			layoutX="335" layoutY="150" />
+
+		<Label text="공사금액                                           원"
+			layoutX="280" layoutY="179" />
+		<TextField fx:id="txtConPay" promptText="공사금액" prefHeight="20"
+			prefWidth="150" layoutX="335" layoutY="176" />
+	</children>
+
+	<Separator layoutX="1" layoutY="210" orientation="HORIZONTAL"
+		prefWidth="600" />
+
+	<children>
+		<Label text="인력 정보" layoutX="20" layoutY="215">
+			<font>
+				<Font size="17"></Font>
+			</font>
+		</Label>
+	</children>
+
+	<children>
+		<Button fx:id="btnManPowerReset" text="초기화" layoutX="110"
+			layoutY="215" />
+
+		<Label text="공사감독" layoutX="40" layoutY="251" />
+		<Label text="이름" layoutX="100" layoutY="251" />
+		<TextField fx:id="txtDerector" promptText="이름" prefHeight="20"
+			prefWidth="60" layoutX="130" layoutY="248" />
+
+		<Label text="연락처" layoutX="200" layoutY="251" />
+		<TextField fx:id="txtDirPhone" promptText="연락처" prefHeight="20"
+			prefWidth="120" layoutX="242" layoutY="248" />
+
+		<Label text="소속" layoutX="372" layoutY="251" />
+		<TextField fx:id="txtDirDepartment" promptText="소속"
+			prefHeight="20" prefWidth="100" layoutX="402" layoutY="248" />
+	</children>
+
+	<children>
+		<Label text="시공관리" layoutX="40" layoutY="277" />
+		<Label text="이름" layoutX="100" layoutY="277" />
+		<TextField fx:id="txtManager" promptText="이름" prefHeight="20"
+			prefWidth="60" layoutX="130" layoutY="274" />
+
+		<Label text="연락처" layoutX="200" layoutY="277" />
+		<TextField fx:id="txtManPhone" promptText="연락처" prefHeight="20"
+			prefWidth="120" layoutX="242" layoutY="274" />
+
+		<Label text="소속" layoutX="372" layoutY="277" />
+		<TextField fx:id="txtManDepartment" promptText="소속"
+			prefHeight="20" prefWidth="100" layoutX="402" layoutY="274" />
+	</children>
+
+	<children>
+		<Label text="현장소장" layoutX="40" layoutY="303" />
+		<Label text="이름" layoutX="100" layoutY="303" />
+		<TextField fx:id="txtLeader" promptText="이름" prefHeight="20"
+			prefWidth="60" layoutX="130" layoutY="300" />
+
+		<Label text="연락처" layoutX="200" layoutY="303" />
+		<TextField fx:id="txtLdPhone" promptText="연락처" prefHeight="20"
+			prefWidth="120" layoutX="242" layoutY="300" />
+
+		<Label text="소속" layoutX="372" layoutY="303" />
+		<TextField fx:id="txtLdDepartment" promptText="소속"
+			prefHeight="20" prefWidth="100" layoutX="402" layoutY="300" />
+	</children>
+
+	<Separator layoutX="1" layoutY="334" orientation="HORIZONTAL"
+		prefWidth="600" />
+		
+	<!-- <Label text="*밑에 있는 '다음' 버튼을 누르면" layoutX="335" layoutY="370" />
+	<Label text=" 자재정보와 인력정보 입력창으로" layoutX="335" layoutY="385" />
+	<Label text=" 이동합니다" layoutX="335" layoutY="400" /> -->
+	<children>
+		<Button fx:id="btnInfoAdd" text="다음" prefHeight="40" prefWidth="50" layoutX="200"
+			layoutY="350" />
+		<Button fx:id="btnInfoExit" text="취소" prefHeight="40" prefWidth="50" layoutX="270"
+			layoutY="350" />
+	</children>
+
+
+</AnchorPane>
